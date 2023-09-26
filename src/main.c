@@ -20,14 +20,14 @@ TEST(testFunc, add) {
 
 TEST(testFunc, add2) {
     EXPECT_EQ(add(5, 3), 8);
-    EXPECT_EQ(add(5, 4), 8);
+    EXPECT_LT(add(5, 4), 8);
     EXPECT_EQ(add(5, 4), 9);
 }
 
 TEST(test, Funcadd) {
-    EXPECT_EQ(add(5, 5), 8);
+    EXPECT_LT(add(5, 5), 11);
     EXPECT_EQ(add(5, 5), 10);
-    EXPECT_EQ(add(5, 5), 7); 
+    EXPECT_NE(add(5, 5), 7); 
 }
 
 int main(int argc, char *argv[]) {
